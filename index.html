@@ -1,0 +1,630 @@
+arnica-care-hub
+
+Previewing last saved version
+
+
+
+
+
+Code
+
+Read only
+
+Upgrade
+
+🌿 Arnica MVP Overview
+
+
+Goal:
+A clean, mobile-first web platform where nurses and PSWs can easily:
+
+
+Create or sign in to an account
+
+
+View available shifts from nearby facilities
+
+
+Submit required credentials (license, certifications, medical forms)
+
+
+Track timesheets and earnings
+
+
+Maintain a professional profile
+
+
+The design keeps a teal aesthetic for trust, health, and freshness.
+
+
+🧾️ 1. Core Pages & Flow
+1.1 Onboarding Flow
+
+
+Purpose: Collect a user’s basic info and direct them to email submission.
+
+
+Sign-Up Page
+
+
+Input: Email (and possibly name)
+
+
+“Continue” button that transitions into next page
+
+
+Minimal distractions — clean and modern UI
+
+
+Email Submission Page
+
+
+Instructs the user to send their documents to helloarnica@gmail.com
+
+
+Displays the Core & Compliance checklist, formatted clearly in teal boxes:
+
+
+RN/LPN license requirements
+
+
+BLS/ACLS/NRP certifications
+
+
+Physical/vaccination docs
+
+
+Background check, references, and experience
+
+
+Call-to-Action: “Continue to App”
+
+
+1.2 Dashboard
+
+
+Purpose: Central hub once the user enters the app.
+
+
+Personalized greeting (“Welcome, Florence Ripoff”)
+
+
+Card layout for available shifts with:
+
+
+Facility name
+
+
+Distance from user (static placeholder in MVP)
+
+
+Role, time, date, hourly rate
+
+
+“View Details” button
+
+
+Stretch idea:
+Later, integrate dynamic shift listings (API or Firebase pull).
+
+
+1.3 Shift Details
+
+
+Purpose: Give more context about a facility.
+
+
+Banner image of the facility (Pretty River Memory Care)
+
+
+Address & location info
+
+
+Shift type, hours, pay rate
+
+
+Buttons:
+
+
+“Map & Directions” → opens Google Maps
+
+
+“Back” → returns to Dashboard
+
+
+1.4 Shifts Page
+
+
+Purpose: Let users browse other available shifts.
+
+
+Placeholder list: “No new shifts yet”
+
+
+Future functionality: Filters by role, distance, pay, facility
+
+
+1.5 Timesheets Page
+
+
+Purpose: Show payment and approval history.
+
+
+Card list of previous shifts:
+
+
+Facility name
+
+
+Approval status (Approved / Pending)
+
+
+Amount & date
+
+
+Example:
+
+
+Chartwell Balmoral — Approved — $195.00
+
+
+Pretty River — Pending — $240.00
+
+
+1.6 Profile Page
+
+
+Purpose: Display professional info.
+
+
+User photo (default avatar)
+
+
+Name, Performance, Reliability
+
+
+(Future MVP+): Edit profile button, upload documents
+
+
+🥘 2. Navigation System
+
+
+Before login:
+
+
+Simple centered layout (no navigation bar)
+
+
+After login:
+
+
+Top nav bar with icons + labels:
+
+
+🏠 Dashboard
+
+
+🔍 Shifts
+
+
+🧽 Timesheets
+
+
+👤 Profile
+
+
+Responsive layout (flexbox): collapses gracefully on mobile
+
+
+🌈 3. Visual & UI Design
+
+
+Aesthetic:
+
+
+Teal primary (#1a8a82)
+
+
+White and soft mint (#e6f3f2) backgrounds
+
+
+Rounded corners (16–20px radius)
+
+
+Shadow depth for card contrast
+
+
+Font: Poppins — clean, readable, modern
+
+
+Consistency: Unified spacing and padding (1.5rem base unit)
+
+
+Responsive:
+
+
+Desktop: 900–1000px width container
+
+
+Mobile: 100% width, simplified spacing
+
+
+⚙️ 4. Technical MVP Structure
+
+
+Built in pure HTML, CSS, and vanilla JavaScript (no frameworks yet).
+
+
+Pages load instantly (no backend or login yet).
+
+
+Navigation handled by showPage() function that hides/shows sections dynamically.
+
+
+Map button uses external window.open() call to Google Maps.
+
+
+💡 5. Expansion-Ready Features (Post-MVP)
+
+
+These are future enhancements that can come after validation:
+
+
+Category	Feature	Description
+Authentication	Real email-based signup/login	Use Firebase Auth or Supabase
+Shift Management	Real-time shift listings	Pull shifts from database via API
+Profile Management	Editable fields, resume uploads	Store on Firebase Storage or S3
+Payments	Track pay periods, total earnings	Integrate with Stripe or PayPal APIs
+Verification	Upload and verify documents	Auto-expiry tracking for licenses
+Admin Dashboard	For retirement homes	Create & manage shift postings
+Messaging	Chat between staff & facility	Basic in-app messaging window
+
+
+🤔 6. MVP Outcome
+
+
+By the end of this MVP:
+
+
+You’ll have a clickable, presentable web demo that looks production-quality on desktop or mobile.
+
+
+It communicates your core concept visually and functionally without needing a database.
+
+
+You can demo:
+
+
+Signing up
+
+
+Sending documents
+
+
+Seeing shifts
+
+
+Viewing a timesheet
+
+
+Exploring your profile
+
+Lovable
+12:25 AM on Oct 14
+
+Thought for 22 seconds
+I'll build a beautiful, mobile-first healthcare staffing platform with a clean teal aesthetic. This evokes trust and professionalism, similar to platforms like Zocdoc or Nursa, but with a modern, minimalist approach.
+
+Features in this MVP:
+Onboarding flow (sign-up → document submission instructions)
+Dashboard with shift cards
+Shift details view
+Shifts listing page
+Timesheets with payment history
+User profile page
+Bottom navigation bar
+Design approach:
+Primary teal (#1a8a82) for trust and healthcare vibes
+Soft mint backgrounds (#e6f3f2) for subtle contrast
+Poppins font for modern, clean readability
+Rounded cards with depth/shadows
+Mobile-first with smooth responsive transitions
+Let me create the design system and all pages:
+
+Show all
+17 edits made
+Built a production-ready Arnica MVP with complete onboarding, shift management, timesheets, and profile features. The design uses a clean teal aesthetic (#1a8a82) with Poppins typography and rounded cards.
+
+What's next?
+Refine & Customize: Tweak colors, spacing, and content via prompts or visual edits
+Master Prompting: Use "chat mode" to plan features like real-time shift filtering, payment integration, or document uploads
+Need authentication, database for shifts, or payment tracking? Lovable Cloud makes adding backend features simple.
+
+
+Restore
+
+Code
+
+Add Arnica MVP structure
+Preview
+
+Visit docs
+
+Connect Lovable Cloud
+
+
+
+add this: Requirements:
+
+
+Login system that checks a Google Sheet for user credentials.
+
+
+Roles: Admin (full access), Home Admin (post/edit shifts), Worker (view shifts).
+
+
+Admin dashboard: add users, assign roles, manage shifts.
+
+
+Home Admin dashboard: post shifts (hourly rate, date, break mins), edit own posts.
+
+
+Homepage with “Retirement Home Login” button in top-right corner.
+
+
+Use teal theme (Arnica branding).
+
+
+Store all user & shift data in Google Sheets (Users tab, Shifts tab).
+
+
+If login matches asmargball13@gmail.com
+/ Arnica → grant full admin access.
+
+
+Use localStorage or cookies for session persistence.
+
+Lovable
+10:27 PM on Oct 19
+
+Thought for 15 seconds
+I need to discuss a critical security concern before implementing this.
+
+⚠️ CRITICAL SECURITY WARNING
+
+The approach you've described (Google Sheets for credentials + localStorage for sessions) has severe security vulnerabilities:
+
+Credential Exposure: Any credentials in a publicly accessible Google Sheet can be viewed by anyone who finds the sheet URL
+Client-Side Auth Bypass: localStorage/cookies can be easily manipulated - anyone can change their role to "admin" in browser dev tools
+No Real Authentication: There's no server-side validation, so the system can be bypassed completely
+Hardcoded Credentials: Storing admin credentials in code is a critical security flaw
+This approach is only suitable for demos/prototypes, NEVER for production.
+
+Recommended Solution: Lovable Cloud
+For a secure, production-ready system, I strongly recommend enabling Lovable Cloud, which provides:
+
+✅ Secure authentication (email/password with proper encryption)
+✅ Role-based access control with server-side validation
+✅ PostgreSQL database instead of Google Sheets
+✅ Protected API endpoints that can't be bypassed
+✅ Session management that can't be tampered with
+I can set this up in minutes, and you'll have:
+
+Admin dashboard to manage users and assign roles
+Home Admin role for facilities to post shifts
+Worker role to view shifts
+Proper login/logout with secure sessions
+Would you like me to enable Lovable Cloud and implement this securely? Or do you want to proceed with the Google Sheets approach understanding it's only for demo purposes?
+
+
+
+
+nah im doing google sheets for demo purposesz
+
+Lovable
+10:30 PM on Oct 19
+
+Thought for 9 seconds
+I'll implement the Google Sheets authentication system for demo purposes. Let me create the login system, role-based dashboards, and Google Sheets integration.
+
+Show all
+9 edits made
+Login system with role-based dashboards implemented - login with asmargball13@gmail.com/Arnica for admin access, or test accounts for home_admin/worker roles.
+
+
+Restore
+
+Code
+
+Implement Google Sheets authentication
+Preview
+
+
+
+
+Update the login system to send a POST request to https://script.google.com/macros/s/AKfycbwW9QxXbB-mI954x3sxsIQ63NA058GWc4OVtSy-oSt49-Y70qobMMMt-5cquXaGCsKE/exec when the user logs in.
+Use the provided email and password to authenticate. The endpoint returns JSON with status, role, and facility fields. If status is 'success', log the user in based on the role and direct them to the appropriate dashboard. If 'error', show an invalid credentials message.
+Remove any hard-coded mock user arrays. Use the response from the Google Sheets API instead.
+Return to preview mode and let me know when done.
+
+Lovable
+11:03 PM on Oct 19
+
+Thought for 10 seconds
+I'll update the login system to authenticate via the Google Sheets API endpoint and remove all hardcoded credentials.
+
+Show all
+2 edits made
+Login system updated to authenticate via Google Sheets API—hardcoded credentials removed and users are now routed based on their role from the API response.
+
+
+Restore
+
+Code
+
+Refactor login to use Google Sheets API
+Preview
+
+
+
+
+it keeps saying log in failed? why
+
+Lovable
+11:09 PM on Oct 19
+
+Thought for 10 seconds
+Let me check the console logs and network requests to see what's happening with the login.
+
+Show all
+4 tools used
+I'll add detailed logging to see what's happening with the login request. This will help us debug the issue.
+
+Show all
+1 edit made
+I've added detailed logging to help debug the issue. Please try logging in again and the console will show:
+
+What email you're attempting to log in with
+The response status from Google Sheets
+The actual data returned
+Any errors
+Try logging in now and let me know what happens - the logs will help us identify if it's a CORS issue, wrong credentials, or if the Google Apps Script isn't configured correctly.
+
+
+Code
+
+Fix: Login fails with Google Sheets API
+Preview Latest
+
+
+
+
+
+Back to Preview
+Code
+Ask Lovable...
+
+Edit
+Chat
+
+
+Add files
+Drop any files here to add them to your message
+
+Files
+Search
+Search files
+public
+
+favicon.ico
+
+placeholder.svg
+
+robots.txt
+
+src
+
+components
+
+hooks
+
+lib
+
+pages
+
+App.css
+
+App.tsx
+
+index.css
+
+main.tsx
+
+vite-env.d.ts
+
+.gitignore
+
+components.json
+
+eslint.config.js
+
+index.html
+
+package.json
+
+postcss.config.js
+
+README.md
+
+tailwind.config.ts
+
+tsconfig.app.json
+
+tsconfig.json
+
+tsconfig.node.json
+
+vite.config.ts
+
+
+src/pages/Index.tsx
+
+
+index.html
+
+
+
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arnica - Healthcare Staffing Platform</title>
+    <meta name="description" content="Connect nurses and PSWs with healthcare facilities. Find shifts, manage timesheets, and grow your career with Arnica." />
+    <meta name="author" content="Arnica" />
+    <meta name="keywords" content="healthcare staffing, nursing jobs, PSW shifts, RN jobs, LPN shifts, retirement home staffing" />
+
+    <meta property="og:title" content="Arnica - Healthcare Staffing Platform" />
+    <meta property="og:description" content="Connect nurses and PSWs with healthcare facilities. Find shifts, manage timesheets, and grow your career with Arnica." />
+    <meta property="og:type" content="website" />
+    
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@arnica" />
+    
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
+Lovable - Build for the web 20x faster
